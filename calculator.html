@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container{
+            position: absolute;
+            top: 15%;
+            left: 30%;
+            background-color: rgb(250, 244, 220);
+            box-shadow: 1px 1px 5px red;
+            width: 27%;
+            height: 400px;
+            border-radius: 10px;
+        }
+        .zero{
+            float: right;
+            text-align-last: end;
+            background-color: rgb(168, 162, 162);
+            width: 100%;
+            height: 40px;
+            border-radius: 10px 10px 1px 1px;
+            font-size: 30px;
+            cursor:text;
+        }.num{
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+        ul{
+            
+            list-style-type: none;
+        }
+        .one, .two, .three, .four, .five{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        ul li{
+          width: 50px;
+          height: 50px;
+          background-color: brown;
+          color: aliceblue;
+          border: 1px solid black;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+        ul li:hover{
+            background-color: grey;
+        }
+        ul li:active{
+            background-color: rgb(153, 128, 128);
+        }
+        h1{
+           position: relative;
+           left: 30%;
+           text-decoration: underline;
+        }
+
+        .container2{
+            background-color: rgb(229, 231, 233);
+            backdrop-filter: blur(100px);
+            box-shadow: 2px 2px 10px blue;
+            position: absolute;
+            width: 350px;
+            height: 450px;
+            right: 100px;
+            border-radius: 10px;
+        }
+        .o{
+            background-color: grey;
+            height: 50px;
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+            font-size: 2.5em;
+            text-align: end;
+            color: white;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,100px);
+            justify-items: center;
+            align-items: center;
+            cursor: text;
+            
+        }
+        .cal{
+            background-color: rgb(201, 198, 198);
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            cursor: pointer;
+        }
+        .cal:hover{
+            background-color: rgb(243, 243, 148);
+        }
+        .cal:active{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Vaarush Calculator</h1>
+    <div class="container">
+        <div class="zero">0</div>
+        <div class="num">
+            <ul class="one">
+                <li>AC</li>
+                <li>%</li>
+                <li> <- </li>
+                <li>/</li>
+            </ul>
+            <ul class="two">
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>*</li>
+            </ul>
+            <ul class="three">
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>-</li>
+            </ul>
+            <ul class="four">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>+</li>
+            </ul>
+            <ul class="five">
+                <li>00</li>
+                <li>0</li>
+                <li>.</li>
+                <li>=</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="o">0</div>
+        <div class="box">
+            <div class="cal" id="7">7</div>
+            <div class="cal" id="8">8</div>
+            <div class="cal" id="9">9</div>
+            <div class="cal" id="*">*</div>
+            <div class="cal" id="4">4</div>
+            <div class="cal" id="5">5</div>
+            <div class="cal" id="6">6</div>
+            <div class="cal" id="+">+</div>
+            <div class="cal" id="1">1</div>
+            <div class="cal" id="2">2</div>
+            <div class="cal" id="3">3</div>
+            <div class="cal" id="-">-</div>
+            <div class="cal" id="00">00</div>
+            <div class="cal" id="0">0</div>
+            <div class="cal" id=".">.</div>
+            <div class="cal" id="=">=</div>
+        </div>
+    </div>
+</body>
+</html>
